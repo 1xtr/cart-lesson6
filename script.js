@@ -2,7 +2,7 @@
 window.addEventListener('load', function () {
     let products = new Product(6);
     let but = products.buyButtons();
-    let buy = products.addProdToCart();
+    let buy = products.addProdToCart;
     products.addListner(but, buy);
 });
 
@@ -44,7 +44,7 @@ class Product {
     }
 
     addListner(el, func) {
-        if (el.length === 'Undefined') {
+        if (typeof el.length == 'undefined') {
             el.addEventListener('click', func);
         } else if (el.length > 0 ) {
             el.forEach(item => item.addEventListener('click', func));
@@ -52,7 +52,7 @@ class Product {
     }
 
     addProdToCart() {
-
+        console.log(new Date());
     }
 }
 
