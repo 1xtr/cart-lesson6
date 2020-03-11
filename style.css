@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  padding: 0 calc(50% - 450px);
+}
+
+/*# sourceMappingURL=style.css.map */
