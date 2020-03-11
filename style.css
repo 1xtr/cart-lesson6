@@ -4,8 +4,61 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 .center {
-  padding: 0 calc(50% - 450px);
+  padding: 100px calc(50% - 450px);
+}
+
+.product {
+  display: flex;
+  flex-flow: row wrap;
+}
+.product__item {
+  width: 300px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.product__img {
+  width: 95%;
+}
+
+.basket {
+  z-index: 999;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.basket__empty {
+  font-size: 18px;
+}
+.basket__img {
+  width: 50px;
+}
+.basket__table {
+  display: table;
+  outline: 1px solid #000000;
+  width: 300px;
+  background-color: #cccccc;
+  position: absolute;
+  right: 0;
+}
+.basket__table_th {
+  font-weight: bold;
+  text-wrap: none;
+}
+.basket__table_tr {
+  display: table-row;
+}
+.basket__table_td, .basket__table_th {
+  display: table-cell;
+  outline: 1px solid #000000;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
